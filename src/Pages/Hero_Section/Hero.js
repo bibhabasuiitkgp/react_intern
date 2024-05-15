@@ -5,31 +5,19 @@ import './Hero.css';
 
 const Hero = () => {
   return (
-    <div className="main-container">
-      <div className="blur-circle1"></div>
-      <div className="blur-circle2"></div>
-      <div className="landing-page">
-        <header>
-          <div className="container">
-            <a href="#" className="logo">Your <b>Website</b></a>
-            <ul className="links">
-              <li>Home</li>
-              <li>About Us</li>
-              <li>Work</li>
-              <li>Info</li>
-              <li>Get Started</li>
-            </ul>
-          </div>
-        </header>
-        <div className="content">
-          <div className="container">
-            <div className="info">
-              <h1>Mastering Your Life <br/>By Mastering <br/>Emotions</h1>
-              {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus odit nihil ullam nesciunt quidem iste, Repellendus odit nihil</p> */}
+    <div className="main-container_Hero">
+      <div className="blur-circle1_Hero"></div>
+      <div className="blur-circle2_Hero"></div>
+      <div className="landing-page_Hero">
+        
+        <div className="content_Hero">
+          <div className="container_Hero">
+            <div className="info_Hero">
+              <h1 className='hero-heading'>Mastering Your Life <br/>By Mastering <br/>Emotions</h1>
               <button>App store</button>
             </div>
-            <div className="image">
-              <img className="main-image" src="/hero_images/image.png" alt="Illustration"/>
+            <div className="image_Hero">
+              <img className="main-image_Hero" src="/hero_images/image.png" alt="Illustration"/>
             </div>
           </div>
         </div>
