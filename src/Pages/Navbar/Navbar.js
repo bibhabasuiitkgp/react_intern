@@ -4,7 +4,7 @@ import './styles.css'; // Importing the CSS file for styling
 function Navbar() {
     return (
         <nav>
-            <h4>mahmoud anwar</h4>
+            <h4>Project</h4>
             <ul>
                 <li><a href="header9.html">home</a></li>
                 <li><a href="#">about us <i className="fas fa-chevron-down"></i></a></li>
