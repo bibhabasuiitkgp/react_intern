@@ -1,9 +1,18 @@
-// Hero.js
-
-import React from 'react';
+import React, { useEffect } from 'react';
+import gsap from 'gsap';
 import './Hero.css';
 
 const Hero = () => {
+  useEffect(() => {
+    let tl = gsap.timeline({ defaults: { ease: "power4.inOut", duration: 2 } });
+
+    tl.to('h1', { 'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)', opacity: 1, y: 0, duration: 2.2 });
+
+    // Ensure proper cleanup
+    return () => {
+        tl.kill(); // Kill the timeline to prevent memory leaks
+    };
+}, []);
   return (
     <div className="main-container_Hero">
       <div className="blur-circle1_Hero"></div>
